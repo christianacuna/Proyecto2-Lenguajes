@@ -1,12 +1,5 @@
 %maximoSubgrafoBipartito([a,b,c,d],[[a,b],[a,c],[b,c],[b,d],[c,d]],X).
 
-%esBipartito([a,b,c,d],[[a,b],[a,c],[b,c],[b,d],[c,d]],X).
-
-%esGrafoConexo([a,b,c,d],[[a,b],[a,c],[b,c],[b,d],[c,d]],X).
-
-%esGrafoAutoDirigido([a,b,c,d],[[a,b],[a,c],[b,c],[b,d],[c,d]],X).
-%X = [[a,b],[a,c],[b,d],[c,d]]
-
 maximoSubgrafoBipartito([],_ListaAristas,[]).
 maximoSubgrafoBipartito(_ListaNodos,[],[]).
 maximoSubgrafoBipartito(_ListaNodos,ListaAristas,Resultado):-crearGrafosConListaArista(ListaAristas,Resultado).
@@ -62,27 +55,3 @@ crearGrafosConListaAristaAux([Cabeza|Cola],Grafo1,Grafo2,NewListaArista):-
 
 crearGrafosConListaArista([],[]).
 crearGrafosConListaArista(ListaArista,NewListaArista):- crearGrafosConListaAristaAux(ListaArista,[],[],NewListaArista).
-
-insertarUnicoLista(Elemento,[],[Elemento]).
-insertarUnicoLista(Elemento,Lista,NewLista):- \+ member(Elemento,Lista) -> NewLista = [Elemento|Lista] ; fail.
-
-esBipartito([],_ListaAristas,false).
-esBipartito(_ListaNodos,[],false).
-esBipartito(ListaNodos,ListaAristas,_Resutlado):- 
-	esGrafoConexo(ListaNodos,ListaAristas,EsConexo), 
-	(EsConexo -> Resultado = true; Resultado = false).
-
-esGrafoConexo(ListaNodos,ListaAristas,Resultado):- 
-	flatten(ListaAristas,ListaNodosDuplicados2), 
-	sort(ListaNodosDuplicados2,ListaNodos2), 
-	(listaIgual(ListaNodos,ListaNodos2) -> Resultado = true ; Resultado = false).
-
-%esGrafoAutoDirigido(_ListaNodos,_ListaAristas,_Resultado):- maplist(subListaDiferentes,ListaAristas).
-
-enterosIgual(Numero,Numero2):- Numero=:=Numero2.
-
-subListaDiferentes([Cabeza|[Cabeza2|_]]):- \+(nodosIguales(Cabeza,Cabeza2)).
-
-nodosIguales(Nodo,Nodo2):- Nodo = Nodo2.
-
-listaIgual(L1, L2) :- maplist(=, L1, L2).
