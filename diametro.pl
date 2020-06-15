@@ -1,16 +1,12 @@
 % diametro([a,b,c,d],[[a,b],[a,c],[b,c],[b,d],[c,d]],X).
 
 
-
-
-
 diametro(_Nodos,Aristas,R):-diametroAux(Aristas,R).
 diametroAux([Cabeza|Cola],R):- diametroAuxAux(Cabeza,Cola,R).
 
 diametroAuxAux(Elemento,Aristas,R):- diametroAuxAuxAux(Elemento,Aristas,R,Aristas).
 
 diametroAuxAuxAux(Elemento,Aristas,R,[Cabeza|[Cabe|Cola]]):-
-print(Elemento),print('\n'),print(Aristas),
 obtenerDiametro(Elemento,Aristas,R);diametroAuxAuxAux(Cabe,Aristas,R,Cola).
 
 obtenerDiametro([_Cabeza|Cola],[],Cola).
