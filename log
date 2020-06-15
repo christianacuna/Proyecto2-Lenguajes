@@ -1,0 +1,59 @@
+[33mcommit d5b2bf890837cb265d6ab2591ea505232d9a6871[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: ssg-13 <sebas.mqt@gmail.com>
+Date:   Mon Jun 15 01:04:10 2020 -0600
+
+    se agregan las 3 soluciones en un mismo archivo
+
+[33mcommit 251faa426f819ee8aa32caa6c9a4accdca84b6bf[m
+Author: EstebanJCh97 <57113689+EstebanJCh97@users.noreply.github.com>
+Date:   Sun Jun 14 23:55:24 2020 -0600
+
+    Update diametro.pl
+
+[33mcommit 8c97af30e5007eb0135f7a161a535cc370e02ace[m
+Author: EstebanJCh97 <57113689+EstebanJCh97@users.noreply.github.com>
+Date:   Sun Jun 14 23:33:56 2020 -0600
+
+    Create diametro.pl
+
+[33mcommit 13f2ac8b598e663f22af0c6b12fc090c234a3fb5[m
+Author: ssg-13 <sebas.mqt@gmail.com>
+Date:   Sun Jun 14 23:25:29 2020 -0600
+
+    pequeño cambio en el codigo de clique
+
+[33mcommit b6f8e4661247283f2e8ce2efc8ace943b8e39c71[m
+Author: ssg-13 <sebas.mqt@gmail.com>
+Date:   Sun Jun 14 20:19:15 2020 -0600
+
+    se agrega relacion para encontrar todos los cliques
+
+[33mcommit 0770e554d7c151437b7f5e7f5de11c8ca92b961d[m
+Author: christianacuna <45090069+christianacuna@users.noreply.github.com>
+Date:   Sun Jun 14 13:59:53 2020 -0600
+
+    Update grafobipartido.pl
+    
+    Limpieza de codigo
+
+[33mcommit 3170ad623a04bf700c1a34218227df78ccacc22b[m
+Author: christianacuna <45090069+christianacuna@users.noreply.github.com>
+Date:   Sun Jun 14 13:57:19 2020 -0600
+
+    Update grafobipartido.pl
+    
+    se pudo arreglar el problema de grafobipartido
+
+[33mcommit ac25f87b38d6daa07965292c798b9dec13fc0581[m
+Author: christianacuna <45090069+christianacuna@users.noreply.github.com>
+Date:   Sat Jun 13 07:44:22 2020 -0600
+
+    Update grafobipartido.pl
+    
+    añadido funciones extra que posiblemente ayuden en el proyecto.
+
+[33mcommit 5ce5cebfbf93a8bb3ef2c94998f017d7bbb71d21[m
+Author: christianacuna <christianlorenso@hotmail.com>
+Date:   Mon Jun 8 00:58:44 2020 -0600
+
+    added grafobipartido
